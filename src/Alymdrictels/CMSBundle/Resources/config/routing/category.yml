@@ -1,0 +1,30 @@
+cms_category:
+    path:     /
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:index" }
+
+cms_category_show:
+    path:     /{id}/show
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:show" }
+
+cms_category_new:
+    path:     /new
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:new" }
+
+cms_category_create:
+    path:     /create
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:create" }
+    requirements: { _method: post }
+
+cms_category_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:edit" }
+
+cms_category_update:
+    path:     /{id}/update
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:update" }
+    requirements: { _method: post|put }
+
+cms_category_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AlymdrictelsCMSBundle:Category:delete" }
+    requirements: { _method: post|delete }

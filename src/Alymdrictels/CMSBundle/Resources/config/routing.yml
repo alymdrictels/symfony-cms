@@ -1,0 +1,29 @@
+alymdrictels_cms_cms_page:
+    resource: "@AlymdrictelsCMSBundle/Resources/config/routing/page.yml"
+    prefix:   /cms/page
+
+alymdrictels_cms_cms_category:
+    resource: "@AlymdrictelsCMSBundle/Resources/config/routing/category.yml"
+    prefix:   /cms/category
+
+alymdrictels_cms_cms_user:
+    resource: "@AlymdrictelsCMSBundle/Resources/config/routing/user.yml"
+    prefix:   /cms/user
+
+alymdrictels_cms_homepage:
+    path:     /
+    defaults: { _controller: AlymdrictelsCMSBundle:Default:index }
+
+alymdrictels_cms_page_display:
+  path: /page/{id}
+  defaults: { _controller: AlymdrictelsCMSBundle:Default:display}
+
+login:
+    path:     /login
+    defaults: { _controller: AlymdrictelsCMSBundle:Security:login }
+
+login_check:
+    path:     /login_check
+
+logout:
+    pattern:     /logout

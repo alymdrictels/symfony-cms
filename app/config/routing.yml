@@ -1,0 +1,4 @@
+alymdrictels_cms:
+    resource: "@AlymdrictelsCMSBundle/Resources/config/routing.yml"
+    prefix:   /
+
